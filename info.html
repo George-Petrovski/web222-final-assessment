@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="normalize.css">
+    <script src="info.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>George Petrovski</title>
+</head>
+<body>
+    <header>
+        <h3>logo:&nbsp</h3>
+        <div id="headerlogo">
+
+        </div>
+        <h1>
+            &nbsp&nbsp&nbsp&nbspThis is the WEB222 Final Assessment
+        </h1>
+    </header>
+    
+    <section id="main">
+        <div id="navbar">
+            <a href="honesty.html" class="button navbuttons">honesty.html</a>
+            <a href="info.html" class="button buttonclicked navbuttons">info.html</a>
+            <a href="reflection.html" class="button navbuttons">reflection.html</a>
+        </div>
+        <div id="form">
+            <form name="signup" method="post" action="https://httpbin.org/post" onsubmit="return formValidation();">
+                <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" value="John"><br>
+                <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                <label for="pword1">Password:</label><br>
+                    <input type="password" id="pword1" name="pword1" value="Doe"><br>
+                <label for="pword2">Re-type Password:</label><br>
+                    <input type="password" id="pword2" name="pword2" value="Doe"><br><br>
+                <label for="uname">Username:</label><br>
+                    <input type="text" id="uname" name="uname" value="Johndoe"><br><br>
+                <label for="education">Education Level:</label>
+                    <select name="education" id="education" required>
+                        <option value="" >- select -</option>
+                        <option value="Technical Diploma" >Technical Diploma</option>
+                        <option value="College Diploma" >College Diploma</option>
+                        <option value="Bachelor's Degree" >Bachelor's Degree</option>
+                        <option value="Master's Degree" >Master's Degree</option>
+                        <option value="Others" >Others</option>
+                    </select><br><br>
+                <label for="gradstatus">Education Status:</label><br>
+                    <input type="radio" id="Graduated" name="gradstatus" value="Graduated" required>
+                        <label for="Graduated">Graduated</label><br>
+                    <input type="radio" id="Current" name="gradstatus" value="Current">
+                        <label for="Current">Current enrolled</label><br>
+                    <input type="radio" id="notgrad" name="gradstatus" value="notgrad">
+                        <label for="notgrad">Did not graduate</label><br><br>
+                <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"required /><br><br>
+                    <input type="hidden" name="lastName" id="lastName" value="Petrovski" />
+                    <input type="hidden" name="studentId" id="studentId" value="148853203" />
+                <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" min="18" max="60"><br><br>
+                    <input type="submit" value="Submit">
+              </form> 
+
+
+
+        </div>
+        <div id="errormsgs">
+            
+        </div>
+    </section>
+
+    <footer>
+        
+        <h3 id="git"><a href="https://george-petrovski.github.io/web222-final-assessment/" id="git">GitHub link</a>
+            Designed by:&nbsp
+        </h3>
+        <h1 id="git">
+            George Petrovski
+            
+        </h1>
+        
+    </footer>
+</body>
+</html>
