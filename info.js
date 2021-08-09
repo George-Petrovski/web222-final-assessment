@@ -117,6 +117,7 @@ function validateUsername() {
     var elem = document.querySelector("#uname");
     var inputValue = elem.value.trim();
 
+    inputValue = inputValue.toUpperCase();
     if (inputValue.charAt(0) < "A" || inputValue.charAt(0) > "Z") { 
         validUsername = false; 
         var firstLetterAlphabet = document.createElement("p");
