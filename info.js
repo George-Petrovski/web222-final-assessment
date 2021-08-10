@@ -9,12 +9,12 @@ function formValidation() {
     newH1.appendChild(h1Content);
     currentDiv.appendChild(newH1);
 
-    var formValid = validateName("fname");
-    formValid = validateName("lname");
-    formValid = validateUsername();
-    formValid = validatePassword();
+    var formFname = validateName("fname");
+    var formLname = validateName("lname");
+    var formUsername = validateUsername();
+    var formPass = validatePassword();
 
-    if (!formValid) {
+    if (!formFname || !formLname || !formUsername || !formPass) {
         return false;
     }
     currentDiv.removeChild(newH1);
