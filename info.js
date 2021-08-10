@@ -18,6 +18,7 @@ function formValidation() {
         return false;
     }
     currentDiv.removeChild(newH1);
+    alert("Success!");
     return true;
 }
 
